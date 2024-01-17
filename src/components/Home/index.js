@@ -1,24 +1,24 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
-import Logo from './Logo'
-import './index.scss'
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import LogoTitle from "../../assets/images/logo.png";
+import Logo from "./Logo";
+import "./index.scss";
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = 'udip'.split('')
-  const jobArray = 'Blockchain Developer'.split('')
-  const interestArray = 'Ethical Hacker'.split('')
+  const nameArray = "atrick".split("");
+  const jobArray = "Software Engineer".split("");
+  const interestArray = "Web Developer".split("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-    return () => clearTimeout(timer)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -30,7 +30,11 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="Sudip Banerjee" />
+            <img
+              src={LogoTitle}
+              alt="Patrick"
+              style={{ width: "50px", marginTop: "0px" }}
+            />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -50,7 +54,7 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Full Stack Blockchain Developer / Ethical Hacker / AI/ML Developer
+            Web Engineer / Full Stack Developer / Senior Frontend Developer
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
@@ -61,7 +65,7 @@ const Home = () => {
 
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
