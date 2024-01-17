@@ -29,13 +29,13 @@ const Skills = () => {
             <br />
           </h1>
           <p>
-            I love to keep a variety of tools in my tech stack. I also make sure
-            to be pro at using one tool before moving on to the next. I keep
-            myself up to date with the latest technologies around.
+            I enjoy maintaining a diverse tech stack and focus on mastering one
+            tool before moving on to the next
           </p>
           <p>
-            Looking for a role in a company with the opportunity to work with
-            the latest technologies on challenging and diverse projects.
+            I stay updated on the latest technologies and am seeking a role in a
+            company where I can work on challenging and diverse projects with
+            the opportunity to use the latest technologies.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const Skills = () => {
 
       <Loader type="pacman" />
     </>
-  )
+  );
 }
 
 export default Skills
