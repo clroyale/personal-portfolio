@@ -1,16 +1,15 @@
-import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import codechefLogo from '../../assets/images/codechef.png'
-import LogoSubtitle from '../../assets/images/Sudip_logo_white.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import "./index.scss";
+import LogoS from "../../assets/images/logo.png";
+import LogoSubtitle from "../../assets/images/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
   faUser,
   faEnvelope,
   faScrewdriverWrench,
-} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+} from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -18,7 +17,7 @@ const Sidebar = () => {
       <div className="nav-bar">
         <Link className="logo" to="/">
           <img src={LogoS} alt="Logo" />
-          <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+          <h4 style={{ fontSize: "17px", color: "white" }}>Patrick</h4>
         </Link>
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
@@ -47,7 +46,7 @@ const Sidebar = () => {
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/sudip-banerjee-300b691bb/"
+              href="https://www.linkedin.com/in/patrick-jensen-7719b3151/"
               target="_blank"
               rel="noreferrer"
             >
@@ -56,26 +55,17 @@ const Sidebar = () => {
           </li>
           <li>
             <a
-              href="https://github.com/metal-oopa"
+              href="https://github.com/clroyale"
               target="_blank"
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faGithub} color="#b9b9b9" />
             </a>
           </li>
-          <li>
-            <a
-              href="https://www.codechef.com/users/metal_oopa"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={codechefLogo} width="24" alt="Codechef" />
-            </a>
-          </li>
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
